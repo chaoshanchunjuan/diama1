@@ -1,0 +1,12 @@
+﻿“20221106.exe”(Win32): 已加载“D:\代码Git存储\20221106\x64\Debug\20221106.exe”。已加载符号。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\ntdll.dll”。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\kernel32.dll”。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\KernelBase.dll”。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\vcruntime140d.dll”。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\ucrtbased.dll”。
+线程 0x6e14 已退出，返回值为 0 (0x0)。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\kernel.appcore.dll”。
+“20221106.exe”(Win32): 已加载“C:\Windows\System32\msvcrt.dll”。
+线程 0xcd8 已退出，返回值为 0 (0x0)。
+线程 0x73b4 已退出，返回值为 0 (0x0)。
+程序“[15500] 20221106.exe”已退出，返回值为 0 (0x0)。
