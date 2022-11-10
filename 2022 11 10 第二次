@@ -1,0 +1,74 @@
+#include <stdio.h>
+#pragma warning (disable:4996)
+int main()
+{
+	//1.输出Hello World
+	//printf("Hello World");
+
+	//2.逆序输出
+	/*int a;
+	scanf("%d", &a);
+	int b = a % 10;
+	int c = a / 10 % 10;
+	int d = a / 100;
+	if (b == 0)
+	{
+		if (c == 0)
+		{
+			printf("%d", d);
+	}
+		else if (c != 0)
+		{
+			printf("%d%d", c, d);
+		}
+
+	}
+	else
+	printf("%d%d%d",b,c,d);*/
+
+	//3.时间换算
+	int b = 0;
+	scanf("%d", &b);
+	int v = b % 10;//4
+	int n = b / 10 % 10;//3
+	int m = b / 100 % 10;//2
+	int l = b / 1000 % 10;//1
+
+	int k = l * 10 + m - 8;
+	if (k < 0)//1.小于0
+	{
+		int o = 24 + k;
+         m  = o % 10;
+          l = o / 10 % 10;
+		 
+	}
+	else//2.大于0
+	{
+		m = k % 10;
+		l = k / 10 % 10;
+	
+
+	}
+
+	if (l == 0)
+	{
+		if (m == 0)
+		{
+			if (n == 0)
+			{
+				printf("%d", v);
+			}
+			else
+				printf("%d%d", n, v);
+		}
+		else
+			printf("%d%d%d", m, n, v);
+	}
+	else
+		printf("%d%d%d%d", l, m, n, v);
+
+
+
+	return 0;
+}
+//正确代码
