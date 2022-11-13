@@ -1,0 +1,52 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+int main()
+{
+	//char a = -1;
+	////10000000000000000000000000000001
+
+	//int* p = (char*)a;
+	////11111111111111111111111100000001
+	////10000000000000000000000011111110
+	////10000000000000000000000011111110
+
+	//printf("%d", a);
+	//if (1 == &a)
+	//	printf("小端");
+	//else
+	//	printf("大端");
+
+	//char arr[]里面加if（1==n）break；
+	char arr[100]={0};
+	int q = 0;
+	for (int n = 0; n < 100000; n++)
+	{
+		scanf("%d", &arr[n]);
+
+		if (arr[n]==-1)
+			break;
+		q++;
+	}
+	//for (int n = 0; n < 100; n++)
+	//{
+	//	scanf("%s", arr);
+	//	if (arr[n] == 0)
+	//	{
+	//		
+	//	}
+	//}
+
+
+	//for寻找数据如果是%2==0就加一，另一个也是一样
+	int k = 0;//ou
+	int l = 0;//ji
+	for (int n = 0; n < q; n++)
+	{
+		if (arr[n] % 2 == 0)
+			k++;
+		else
+			l++;
+	}
+	printf("%d %d", l, k);
+	return 0;
+}
