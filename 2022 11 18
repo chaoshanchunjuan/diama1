@@ -1,0 +1,85 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+#include <math.h>
+int main()
+{
+	////打印素数
+	//int arr[200]={0};
+	//int p = 0;
+	//int count = 0;
+	//for (int o = 2; o< 200; o++)
+	//{
+	//	for (int i = 2; i < 200; i++)
+	//	{
+	//		for (int j = 2; j < 200; j++)
+	//		{
+	//			if (o != i && o != j && o != i * j)
+	//			{
+	//				arr[p] =o;
+	//				p++;
+	//				count++;
+	//			}
+	//		}
+	//	}
+	//}
+	//
+	////输入数字
+	//int n = 0;
+	//int m = 0;
+	//scanf("%d", &n);
+	//scanf("%d", &m);
+	////判断数字的大小
+	//int min = (n < m ? n : m);
+	//int max = (n > m ? n : m);
+	//int q = 0;
+	////进行循环，在输入两个数字之间循环
+	//for (int sz = min; sz <= max; min++)
+	//{
+	//	//在数组之间循环
+	//	for (int i = 0; i < count; i++)
+	//	{
+	//		//如果数组大于我的sz就说明过头了
+	//		if (arr[count] > sz)
+	//		{
+	//			break;
+	//		}
+	//		//不过头就开始计算
+	//		else 
+	//		{
+	//			//如果两个相等
+	//			 if (sz == arr[count])
+	//		     {
+	//		          q = q + sz;
+	//		      }
+	//			 else if (count == n && count == m)
+	//			 {
+	//				 q = q + arr[count];
+	//			 }
+	//		}
+	//		
+	//	}
+	//}
+	//printf("%d", q);
+
+
+	int arr[200] = { 0 };
+	int n = 0;
+	int count = 0;
+
+	for (int i = 2; i <= 200; i++)
+	{
+		int j;
+		for ( j = 2; j < i; j++)
+		{
+			if (i % j == 0)
+				break;
+		}
+		if (i == j)
+		{
+			arr[n] = i;
+			n++;
+			count++;
+		}
+	}
+	return 0;
+}
