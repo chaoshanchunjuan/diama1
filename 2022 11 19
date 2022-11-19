@@ -1,0 +1,32 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+#include <math.h>
+int add(int x, int y)
+{
+	return x * y++;
+}
+int main()
+{
+	//int a = 2;
+	//int b = 3;
+	//int k=add(a, b);
+	//printf("%d", k);
+	//char a = -1;
+	//printf("%u\n", a);//10000001   bu :11111111     
+
+	//printf("%d", a);
+
+	/*char a = 'B' + '8' - '3';*/
+	//printf("%", a);
+	//求前n项和
+	/*int sum = 0;
+	int n = 0;
+	scanf("%d", &n);
+	for (int i = 1; i <= n; i++)
+	{
+		sum = sum + i;
+	}
+	printf("%d", sum);*/
+	
+	return 0;
+}
