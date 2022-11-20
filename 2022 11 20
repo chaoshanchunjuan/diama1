@@ -1,0 +1,76 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+#include <math.h>
+
+//int main()
+//{
+//	//输入数字，用数组接收（-100000->100000）
+//	char arr[100];
+//	scanf("%s", arr);
+//	//循环判断，进行一个一个判断然后打印，switch语句
+//	if (arr[0] < 0)
+//		{
+//			printf("fu ");
+//			arr[99] = -arr[99];
+//		}
+//	int count = 0;
+//	for (int j = 0; j < 8; j++)
+//	{
+//		if (arr[j] >= '0' && arr[j] <= '9')
+//			count++;
+//		}
+//		//元素个数为count
+//	for(int l=0;l<count-1;l++)
+//		{
+//			switch (arr[l])
+//			{
+//			case 0:printf("ling "); break;
+//			case 1:printf("yi "); break;
+//			case 2:printf("er "); break;
+//			case 3:printf("san "); break;
+//			case 4:printf("si "); break;
+//			case 5:printf("wu "); break;
+//			case 6:printf("liu "); break;
+//			case 7:printf("qi "); break;
+//			case 8:printf("ba "); break;
+//			case 9:printf("jiu "); break;
+//			}
+//		}
+//	
+//	switch (arr[count])
+//	{
+//	case 0:printf("ling"); break;
+//	case 1:printf("yi"); break;
+//	case 2:printf("er"); break;
+//	case 3:printf("san"); break;
+//	case 4:printf("si"); break;
+//	case 5:printf("wu"); break;
+//	case 6:printf("liu"); break;
+//	case 7:printf("qi"); break;
+//	case 8:printf("ba"); break;
+//	case 9:printf("jiu"); break;
+//	}
+
+	//计算出来等明天看课程再来试一下
+的
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}
