@@ -1,0 +1,69 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+#include <math.h>
+////int fen(int a)
+////{
+////	if (a >= 10)
+////	{
+////		a=a / 10;
+////		fen(a);
+////}
+////	else if (a < 10)
+////	{
+////		return a;
+////	}
+////}
+//int main()
+//{
+//	char a = 0;
+//	scnaf("%d", &a);
+//	if (a < 0)
+//	{
+//		printf("fu ");
+//		a = -a;
+//	}
+//	//fen(a);
+
+int main()
+{
+	//打印素数:自己输入一个数字判断
+   /*
+	int isPrime = 1;
+	int a = 0;
+	scanf("%d", &a);
+	for (int i = 2; i < a; i++)
+	{
+		if (a%i == 0)
+		{
+			isPrime = 0;
+		}
+	}
+	if (isPrime == 1)
+	{
+		printf("是素数");
+	}
+	else
+	{
+		printf("不是素数");
+	}
+	*/
+	//输出1-1000的素数
+	int isPrime = 1;
+	for (int k = 2; k <= 1000; k++)
+	{
+		for (int i = 2; i < k; i++)
+		{
+			if (k % i == 0)
+			{
+				isPrime = 0;
+				break;
+			}
+		}
+		if (isPrime == 1)
+		{
+			printf("%d\n",k);
+		}
+		isPrime = 1;
+	}
+	return 0;
+}
