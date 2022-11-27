@@ -1,0 +1,229 @@
+#include <stdio.h>
+#include <math.h>
+#pragma warning (disable:4996)
+
+
+	//数组计算数字个数
+
+	//定义数组且初始化数组
+	//int count[10];
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	count[i] = 0;
+	//}
+	////循环判断输入数字
+	//int n = 0;
+	//scanf("%d", &n);
+	//while (n != -1)
+	//{
+	//	if (n >= 0 && n <= 9)
+	//	{
+	//		count[n]++;
+	//	}
+	//	scanf("%d", &n);
+	//}
+	////打印数组
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	printf("%d:%d\n", i, count[i]);
+	//}
+
+
+
+	//int x;
+	//int count[10];
+	//int i;
+	//for (i = 0; i < 10; i++)
+	//{
+	//	count[i] = 0;
+	//}
+	//scanf("%d", &x);
+	//while (x != -1)
+	//{
+	//	if (x >= 0 && x <= 9)
+	//	{
+	//		count[x] ++;
+	//	}
+	//	scanf("%d", &x);
+	//}
+	//for (i = 0; i < 10; i++)
+	//{
+	//	printf("%d:%d\n", i, count[i]);
+	//}
+
+	//int count[10];
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	count[i] = 0;
+	//}
+	//int n = 0;
+	//scanf("%d", &n);
+	//while (n != -1)
+	//{
+	//	if (n <= 9 && n >= 0)
+	//	{
+	//		count[n]++;
+	//		scanf("%d", &n);
+	//	}
+	//}
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	printf("%d:%d\n", i, count[i]);
+	//}
+	//数英文个数？
+
+	//char arr[10];
+	//scanf("%s", arr);
+	//int count = 0;
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	if (arr[i] >= 'a' && arr[i] <= 'z')
+	//	{
+	//		count++;
+	//	}
+	//}
+	//printf("%d", count);
+
+	////求素数
+
+	//for (int i = 2; i < 100; i++)
+	//{
+	//	int isPrime = 1;
+	//	for (int j = 2;j < i; j++)
+	//	{
+	//		if (i % j == 0)
+	//		{
+	//			isPrime = 0;
+	//			break;
+	//		}
+	//		
+	//	}
+	//	if (isPrime == 1)//注意这个是判断不是赋值要两个等于号
+	//	{
+	//		printf("%d\n", i);
+	//	}
+	//}
+
+	//求素数和
+//int sum = 0;
+//for (int i = 2; i < 100; i++)
+//{
+//	int isPrime = 1;
+//	for (int j = 2; j < i; j++)
+//	{
+//		if (i % j == 0)
+//		{
+//			isPrime = 0;
+//			break;
+//		}
+//
+//	}
+//	if (isPrime == 1)//注意这个是判断不是赋值要两个等于号
+//	{
+//		sum = sum + i;
+//	}
+//}
+//printf("%d", sum);
+
+//for (int i = 0; i < 10; ++i)
+//{
+//	printf("%d\n", i);
+//}
+//printf("\n");
+//for (int i = 0; i++ < 10; )
+//{
+//	printf("%d\n", i);
+//}
+
+
+//int i, j, k;
+//i = 5; j = 10; k = 0;
+//printf("%d", k > i < j);
+
+//void swap(int a, int b);
+//int main()
+//{
+//	int a = 5;
+//	int b = 6;
+//	swap(a, b);
+//	printf("%d-%d\n", a, b);
+//	return 0;
+//}
+//void  swap(int a, int b)
+//{
+//	int t = a;
+//	a = b;
+//	b = t;
+//}
+
+int main()
+{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d/%d", &a, &b);
+//	if (a > b)
+//	{
+//		int p = a;
+//		a = b;
+//		b = p;
+//	}
+//	//计算
+//	//a*10/b==c   打印c   
+//	int temp = 0;
+//		if ((a / b) <= 0)
+//			printf("0.");
+//		else
+//			printf("1.");
+//		int i;
+//	for ( i = 0; i < 200; i++)
+//	{
+//		 temp = a * 10 / b;
+//		printf("%d", temp);
+//		int n = a * 10 - b * temp;
+//		a = n;
+//		
+//		if (n == 0)
+//		{
+//			printf("\n");
+//			break;
+//		}
+//		
+//}
+//		if(i==200)
+//			printf("\n");
+//
+//	
+//
+
+	////判断素数
+	//int a = 0;
+	//int b = 0;
+	//int isPrime = 1;
+	//scanf("%d-%d", &a, &b);
+	//	for (int i = a; i < b - a; i++)
+	//	{
+	//		for (int j = 2; j <= sqrt(i); j++)
+	//		{
+	//			if (i % j == 0)
+	//			{
+	//				isPrime = 0;
+	//				break;
+	//			}
+	//		}
+	//		if (isPrime == 1)
+	//		{
+	//			printf("%d\n", i);
+	//		}
+	//		isPrime = 1;
+	//	}
+
+
+
+
+
+
+
+
+
+	return 0;
+}
