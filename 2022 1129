@@ -1,0 +1,113 @@
+#include <stdio.h>
+#include <math.h>
+#pragma warning (disable:4996)
+
+//int search(int key, int arr[10], int sz)
+//{
+//	int ret = -1;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (arr[i] == key)
+//		{
+//			ret = i;
+//			return ret;
+//		}
+//	}
+//	return ret;//单一出口
+//}
+
+//int search(int m, int amount[], int sz)
+//{
+//	int ret = -1;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (amount[i] == m)
+//		{
+//			ret = i;
+//			return ret;
+//		}
+//	}
+//	return ret;
+//}
+
+
+
+
+int main()
+{
+	
+	//int isPrime[100];
+	////素数去倍数求
+	//for (int i = 2; i < 100; i++)
+	//{
+	//	isPrime[i] = 1;
+	//}
+
+	//for (int i = 2; i< 100; i++)
+	//{
+	//	if (isPrime[i] != 0)
+	//	{
+	//			int x = i;
+	//		for ( int j = 2; j * x < 100; j++)
+	//		{
+	//			isPrime[j*x] = 0;
+	//		}
+	//	}
+	//}
+	//for (int i = 0; i < 100; i++)
+	//{
+	//	if (isPrime[i] == 1)
+	//	{
+	//		printf("%d\n", i);
+	//	}
+	//}
+
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+	//int sz = sizeof(arr) / sizeof(arr[0]);
+	//int n = search(5, arr, sz);
+	//printf("%d", n);
+
+ //   int amount[4] = { 1,5,15,20 };
+ //   char* name[] = { "one", "five","15","20" };
+	//int sz = sizeof(amount) / sizeof(amount[0]);
+	//int m = 5;
+	//char n = search(m, amount, sz);
+	//if (n != -1)
+	//{
+	//	printf("%s\n", name[n]);
+	//}
+
+	/*int arr[] = { 1,2,3,4,5 };
+	char* name[] = { "one","two","three","four","five" };
+	int k=1;
+	int sz = sizeof(arr) / sizeof(arr[0]);*/
+
+	int arr[] = { 1,2,3,4,5 };
+	char* name[] = { "one","two","three","four","five" };
+	struct
+	{
+		int arr;
+		char* name;
+	} coin[] = {
+		{1,"one"},
+		{2,"two"},
+		{3,"three"},
+		{4,"four"},
+		{5,"five"}
+
+	};
+
+	int k = 0;
+	scanf("%d", &k);
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	for (int i = 0; i < sz; i++)
+	{
+		if (coin[i].arr == k)
+		{
+			printf("%s\n", coin[i].name);
+			break;
+		}
+
+	}
+	return 0;
+}
