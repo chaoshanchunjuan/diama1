@@ -1,0 +1,252 @@
+//#include <stdio.h>
+//#include <math.h>
+//#pragma warning (disable:4996)
+
+//int search(int key, int arr[10], int sz)
+//{
+//	int ret = -1;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (arr[i] == key)
+//		{
+//			ret = i;
+//			return ret;
+//		}
+//	}
+//	return ret;//单一出口
+//}
+
+//int search(int m, int amount[], int sz)
+//{
+//	int ret = -1;
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (amount[i] == m)
+//		{
+//			ret = i;
+//			return ret;
+//		}
+//	}
+//	return ret;
+//}
+
+
+//
+//
+//int main()
+//{
+//	
+	//int isPrime[100];
+	////素数去倍数求
+	//for (int i = 2; i < 100; i++)
+	//{
+	//	isPrime[i] = 1;
+	//}
+
+	//for (int i = 2; i< 100; i++)
+	//{
+	//	if (isPrime[i] != 0)
+	//	{
+	//			int x = i;
+	//		for ( int j = 2; j * x < 100; j++)
+	//		{
+	//			isPrime[j*x] = 0;
+	//		}
+	//	}
+	//}
+	//for (int i = 0; i < 100; i++)
+	//{
+	//	if (isPrime[i] == 1)
+	//	{
+	//		printf("%d\n", i);
+	//	}
+	//}
+
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+	//int sz = sizeof(arr) / sizeof(arr[0]);
+	//int n = search(5, arr, sz);
+	//printf("%d", n);
+
+ //   int amount[4] = { 1,5,15,20 };
+ //   char* name[] = { "one", "five","15","20" };
+	//int sz = sizeof(amount) / sizeof(amount[0]);
+	//int m = 5;
+	//char n = search(m, amount, sz);
+	//if (n != -1)
+	//{
+	//	printf("%s\n", name[n]);
+	//}
+
+	/*int arr[] = { 1,2,3,4,5 };
+	char* name[] = { "one","two","three","four","five" };
+	int k=1;
+	int sz = sizeof(arr) / sizeof(arr[0]);*/
+
+//	int arr[] = { 1,2,3,4,5 };
+//	char* name[] = { "one","two","three","four","five" };
+//	struct
+//	{
+//		int arr;
+//		char* name;
+//	} coin[] = {
+//		{1,"one"},
+//		{2,"two"},
+//		{3,"three"},
+//		{4,"four"},
+//		{5,"five"}
+//
+//	};
+//
+//	int k = 0;
+//	scanf("%d", &k);
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		if (coin[i].arr == k)
+//		{
+//			printf("%s\n", coin[i].name);
+//			break;
+//		}
+//
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//	int main()
+//
+//	{
+//		struct  aj
+//		{
+//			int cx;
+//			int xg;
+//		};
+//		aj cgg[2] = { {1,2},{3,4} };
+//		printf("%d%d", cgg[0].cx, cgg[0].xg);
+//
+//		return 0;
+//	}
+
+//#include <stdio.h>
+//#include <math.h>
+//	int main()
+//	{
+//		int i = 0;
+//		int a = 0;
+//		int b = 0;
+//		scanf("%d%d%d", &i, &a, &b);
+//		if (a == 1 || a == 2)
+//		{
+//			printf("长方形面积\n");
+//			printf("三角形面积\n");
+//		}
+//		else
+//		{
+//			printf("错误");
+//		}
+//		return 0;
+//	}
+#include <stdio.h>
+#include <math.h>
+#pragma warning (disable:4996)
+
+int main()
+{
+   /*	int a;
+	int b;
+	for (int j = 0; j < 2; j++)
+	{
+		scanf("%d %d", &a, &b);
+		for (int i = 0; i < a; i++)
+		{
+			scanf("%d %d", &a, &b);
+		}
+	}*/
+	/*
+	int arr[100][2];
+	int count = 0;
+	while (count < 2)
+	{
+		for (int i = 0; i < 100; i++)
+		{
+			for (int j = 0; j < 2; j++)
+			{
+				scanf("%c", &arr[i][j]);
+				count++;
+			}
+			if (arr[i][0] == 0)
+				break;
+		}
+		count++;
+	}*/
+	//
+	//for (int k = 100; k >= 0; k--)
+	//{
+	//	for (int i = 0; i < 100; i++)
+	//	{	
+	//		if (arr[i][0] == arr[k][0])
+	//		{
+	//			arr[i][1]=arr[i][1] + arr[k][1];
+	//			printf("%dx%d+", arr[k][0], arr[k][1]);
+	//		}
+	//		
+	//	}
+	//}
+	int arr[200][2] = { 0 };
+	int ji = 0;
+	int count = 0;
+		for (int i = 0; i < 200; i++)
+		{
+			for (int j = 0; j < 2; j++)
+			{
+				scanf("%d", &arr[i][j]);
+
+
+
+
+
+				if (arr[i][0] == 0)
+					ji++;
+			}
+			count++;
+			if (ji == 4)
+				break;
+			
+		}
+		//数组调试
+		/*{
+			for (int i = 0; i < count; i++)
+			{
+				for (int j = 0; j < 2; j++)
+				{
+					printf("%d", arr[i][j]);
+				}
+				printf("\n");
+			}
+		}*/
+		for (int k = 0; k <= arr[0][0]; k++)
+		{
+			for (int i = 0; i < 200; i++)
+			{
+				for (int j = 0; j < 2; j++)
+				{
+					if (arr[k][0] == arr[i][0])
+					{
+						arr[k][1] = arr[k][1] + arr[i][1];
+						break;
+					}
+				}
+			}
+			if (arr[k][1] != 0)
+			{
+				if(k>0)
+				printf("%dx%d+", arr[k][0], arr[k][1]);
+				else if(k==0)
+				printf("%d",arr[k][1]);
+
+			}
+		}
+
+		
+	return 0;
+}
