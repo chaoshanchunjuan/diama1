@@ -1,0 +1,104 @@
+#include <stdio.h>
+#include <math.h>
+#pragma warning (disable:4996)
+
+int main()
+{
+	int count1 = 0;
+	int count2 = 0;
+	int arr[200][2];
+	//输入第一次
+		int i;
+		for (i = 0; i < 200; i++)
+		{
+			for (int j = 0; j < 2; j++)
+			{
+				scanf("%d", &arr[i][j]);
+				
+			}
+			count1++;
+			if (arr[i][0] == 0)
+				break;
+		}
+
+	//输入第二次
+		int p;
+		for (p = 0;p < 200; p++)
+		{
+			for (int j = 0; j < 2; j++)
+			{
+				scanf("%d", &arr[p][j]);
+				
+			}
+			count2++;
+			if (arr[p][0]==0)
+			{
+				break;
+			}
+		}
+
+		int count = count1 + count2;
+		int max = arr[0][0] > arr[count1][0] ? arr[0][0] : arr[count1][0];
+		int j;
+		int k = 0;
+		for ( j = max; j > 0; j--)
+		{
+			//printf(" j==%d\n  ", j);
+			
+			for (int i = 0; i < count; i++)
+			{
+				if (k != i)
+				{
+					if (j == arr[k][0] && j == arr[i][0])
+						printf("%dx%d+\n", arr[i][1] + arr[k][1], j);
+
+					else if (j == arr[k][0] &&j != arr[i][0])
+						printf("%dx%d+\n", arr[k][1], j);
+					else if (j != arr[k][0] && j == arr[i][0])
+						printf("%dx%d+\n", arr[j][1], j );
+				}
+				else if (j == 0)
+				{
+					if (arr[count1 - 1][0] == 0 && arr[count - 1] == 0)
+						printf("%d", arr[count1 - 1][1] + arr[count - 1][1]);
+					else if (arr[count1 - 1][0] != 0 && arr[count - 1] == 0)
+						printf("%d", arr[count1 - 1][1]);
+					else if(arr[count1 - 1][0] == 0 && arr[count - 1] != 0)
+						printf("%d",arr[count - 1][1]);
+				}
+			}
+			k++;
+
+
+		}
+
+		printf("count1==%d\n", count1);
+		printf("count2==%d\n", count2);
+		printf("count==%d\n", count);
+		printf("max==%d", max);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return 0;
+}
