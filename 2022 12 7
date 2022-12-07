@@ -1,0 +1,161 @@
+//#include <stdio.h>
+//#include <math.h>
+//#pragma warning (disable:4996)
+//
+//int main()
+//{
+	//int arr1[100];
+	//for (int i = 0; i < 100; i++)
+	//{
+	//	arr1[i] = 0;
+	//}
+	//char arr[100];
+	//scanf("%s", arr);
+	//int j = 0;
+	///*while (arr[j] != '\0')
+	//{
+	//	arr1[k] = arr[j];
+	//	j++;
+	//	k++;
+	//}*/
+	//char sum = 0;
+	//while (arr[j] != '\0')
+	//{
+	//	sum = sum + arr[j]-'0';
+	//	j++;
+	//}
+	//printf("%d\n", sum);
+	//int k = j;
+	//int o = 0;
+	//while(sum!=0)
+	//{
+	//	arr1[o] = sum % 10;
+	//	sum /= 10;
+	//	o++;
+	//}
+	//for (int m = o-1; m >= 0; m--)
+	//{
+	//	switch (arr1[m])
+	//	{
+	//	case 0:printf("ling"); break;
+	//	case 1:printf("yi"); break;
+	//	case 2:printf("er"); break;
+	//	case 3:printf("san"); break;
+	//	case 4:printf("si"); break;
+	//	case 5:printf("wu"); break;
+	//	case 6:printf("liu"); break;
+	//	case 7:printf("qi"); break;
+	//	case 8:printf("ba"); break;
+	//	case 9:printf("jiu"); break;
+	//		if (m != 0)
+	//			printf(" ");
+	//	}
+	//}
+	//if (o == 0)
+	//	printf("ling");
+
+	/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+ //	int* runningSum(int* nums, int numsSize, int* returnSize) {
+ //		for (int i = 1; i < numsSize; i++)
+ //		{
+ //			nums[i] = nums[i] + nums[i - 1];
+ //		}
+ //		*returnSize = numsSize;
+ //		return nums;
+ //	}
+ //	int numDifferentIntegers(char* word) {
+ //		int arr[10];
+ //		for (int j = 0; j < 10; j++)
+ //		{
+ //			arr[i] = 0;
+ //		}
+ //		for (int i = 0; word[i] != '\0'; i++)
+ //		{
+ //			if (word[i] >= '0' && word[i] <= '9')
+ //			{
+ //
+ //			}
+ //
+ //
+ //		}
+ //		return word;
+ //	}
+ //
+ //	return 0;
+ //}
+//#include <stdio.h>
+//#pragma warning (disable :4996)
+//
+//int main()
+// {
+//	int p = 0;
+//    int  arr[100];
+//	for (int i = 0; i < 100; i++)
+//	{
+//		arr[i] = 0;
+//		
+//	}
+//	char arr2[999];
+//	scanf("%[^\n]", arr2);
+//	//printf("%s", arr2);
+//
+//	int count = 0;
+//	int count2 = 0;
+//	for (int k = 0; k < 100; k++)
+//	{
+//		if (arr2[k] == ' ')
+//		{
+//			count2++;
+//			
+//		}
+//		else if (arr2[k] == '.')
+//		{
+//			p=p - 1;
+//			break;
+//		}
+//		else
+//		{
+//			break;
+//		}
+//			
+//	}
+//	for (int j=count2;arr2[j]!='\0';j++)
+//	{
+//		if (arr2[j] == ' ')
+//		{
+//			if (count != 0)
+//			{
+//				arr[p] = count;
+//				p++;
+//				count = 0;
+//				//printf("%d\n", count);
+//			}
+//		}
+//		else if (arr2[j] == '.')
+//		{
+//			arr[p] = count;
+//			break;
+//			//printf("%d\n", count);
+//		}
+//		else
+//		{
+//			count++;
+//		}
+//
+//	}
+//	//printf("%d", p);
+//	for (int i = 0; i <= p; i++)
+//	{
+//		if (p == -1)
+//			break;
+//		printf("%d", arr[i]);
+//		if (i != p)
+//		{
+//			printf(" ");
+//		}
+//	}
+//
+//	return 0;
+//}
