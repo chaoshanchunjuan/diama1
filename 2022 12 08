@@ -1,0 +1,221 @@
+#include <stdio.h>
+#pragma warning (disable:4996)
+
+int main()
+{
+	//int arr[100][10];
+	//int count = 0;
+	//int temp1 = 0;
+
+	//for (int i = 0; i < 2; i++)
+	//{
+	//	for (int j = 0; j < 100; j++)
+	//	//while(1)
+	//	{
+	//		for (int k = 0; k < 2; k++)
+	//		{
+	//			scanf("%d", &arr[j][k]);
+	//		}
+	//		
+	//		count++;
+	//		if (arr[j][0] == 0)
+	//		{
+	//			temp1 += 1;
+	//			break;
+	//		}
+	//
+	//	}
+	//	if (temp1 == 2)
+	//	{
+	//		break;
+	//	}
+	//}
+	//{
+	//	for (int i = 0; i < count; i++)
+	//	{
+	//		for (int j = 0; j < 2; j++)
+	//		{
+	//			printf("%d\t", arr[i][j]);
+	//		}
+	//		printf("\n");
+	//	}
+	//}
+
+	int arr1[102][2]={0};
+	int arr2[102][2]={0};
+	/*for (int k = 0; k < 100; k++)
+	{
+		for (int j = 0; j < 2; j++)
+		{
+			arr1[k][j] = 0;
+			arr2[k][j] = 0;
+		}
+	}*/
+	int count1 = 0;
+	for (int i = 0; i < 100; i++)
+	{
+
+		for (int j = 0; j < 2; j++)
+		{
+			scanf("%d", &arr1[i][j]);
+		}
+		count1++;
+		if (arr1[i][0] == 0)
+		{
+			break;
+		}
+	}
+	int count2 = 0;
+	for (int i = 0; i < 100; i++)
+	{
+
+		for (int j = 0; j < 2; j++)
+		{
+			scanf("%d", &arr2[i][j]);
+		}
+		count2++;
+		if (arr2[i][0] == 0)
+		{
+			break;
+		}
+	}
+	//for (int i = 1; i < count1; i++)
+	//{
+	//	if (arr1[i][0] > arr1[i - 1][0])
+	//	{
+	//		int temp = arr1[i][0];
+	//		arr1[i - 1][0] = arr1[i][0];
+	//		arr1[i][0] = temp;
+	//		int temp1 = arr1[i][1];
+	//		arr1[i][1] = arr1[i - 1][1];
+	//		arr1[i - 1][1] = temp1;
+	//		}
+	//	
+	//}
+	/*for (int i = 1; i < count2; i++)
+	{
+		if (arr2[i][0] > arr2[i - 1][0])
+		{
+			int temp = arr2[i][0];
+			arr2[i - 1][0] = arr2[i][0];
+			arr2[i][0] = temp;
+			int temp1 = arr2[i][1];
+			arr2[i][1] = arr2[i - 1][1];
+			arr2[i - 1][1] = temp1;
+		}
+
+	}*/
+	/*int a = 0;
+	int b = 0;
+	if (arr1[a][0] == arr2[b][0])
+	{
+		
+	}
+	else if (arr1[a][0] > arr2[b][0])
+	{
+
+	}
+	else
+	{
+
+	}*/
+
+	//如果第一个大于第二个就直接打印，然后第一个加加
+	//如果第二个大于第一个就打印第二个然后第二个加加
+	//如果两个相等就加完直接打印
+	//打印格式问题就是（如果前一个数是0就打印系数，如果第二个数是0直接就是不打印）
+
+	for (int i = 0; i < count1; i++)
+	{
+		for (int j = 0; j < count1 - i - 1; j++)
+		{
+				if (arr1[i][0] > arr1[i - 1][0])
+		{
+			int temp = arr1[i][0];
+			arr1[i - 1][0] = arr1[i][0];
+			arr1[i][0] = temp;
+			int temp1 = arr1[i][1];
+			arr1[i][1] = arr1[i - 1][1];
+			arr1[i - 1][1] = temp1;
+			}
+		}
+	}
+	{
+		for (int i = 0; i < count1; i++)
+		{
+			for (int j = 0; j < 2; j++)
+			{
+				printf("%d\t", arr1[i][j]);
+			}
+			printf("\n");
+		}
+	}
+	for (int i = 0; i < count2; i++)
+	{
+		for (int j = 0; j < count2 - i - 1; j++)
+		{
+			if (arr2[i][0] > arr2[i - 1][0])
+			{
+				int temp = arr2[i][0];
+				arr2[i - 1][0] = arr2[i][0];
+				arr2[i][0] = temp;
+				int temp1 = arr2[i][1];
+				arr2[i][1] = arr2[i - 1][1];
+				arr2[i - 1][1] = temp1;
+			}
+		}
+	}
+
+	int a = 0;
+	int b = 0;
+	while(a<count1&&b<count2)
+	{
+		if (arr1[a][0] > arr2[b][0])
+		{
+		//daying
+			if (arr1[a][0] == 0)
+				printf("%d+", arr1[a][1]);
+			else
+			{ 
+				if (arr1[a][0] == 1)
+					printf("%dx+", arr1[a][1]);
+				else
+				printf("%dx%d+", arr1[a][1], arr1[a][0]);
+			}
+			a++;
+		}
+		else if(arr1[a][0] < arr2[b][0])
+		{
+			//daying
+			if (arr2[b][0] == 0)
+				printf("%d+", arr2[b][1]);
+			else
+			{
+				if (arr2[b][0] == 1)
+					printf("%dx+", arr2[b][1]);
+				else
+				printf("%dx%d+", arr2[b][1], arr2[b][0]);
+				b++;
+			}
+		}
+		else
+		{
+			int n = arr1[a][1] + arr2[b][1];
+			//daying
+			if (arr1[a][0] == 0 )
+				printf("%d", n);
+			else
+			{
+				if (arr1[a][0] == 1)
+					printf("%dx+", n);
+				else
+				printf("%dx%d+", n, arr1[a][0]);
+			}
+			a++;
+			b++;
+		}
+
+
+	}
+	return 0;
+}
