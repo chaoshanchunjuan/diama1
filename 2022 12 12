@@ -1,0 +1,95 @@
+
+
+		//int i, j;
+
+		//int a[4][3];
+
+		//printf("请输入4行数据，每行3个：\n");
+
+		//for (i = 0; i < 4; i++)
+
+		//	for (j = 0; j < 3; j++)
+
+		//		scanf("%d", &a[i][j]);
+
+
+
+		//printf("请输入待输出数据行号：\n");//自行输入，结果对应正确即可 
+
+		//scanf("%d", &i);
+
+		//FILE* fp;
+
+		//fp = fopen("d:\\a01.txt", "a+");
+
+		//fprintf(fp, "数据1\t数据2\t数据3\n");
+
+		//for (j = 0; j < 3; j++)
+
+		//	fprintf(fp, "%d\t", a[i - 1][j]);
+
+
+
+		//FILE* fp;
+
+		//fp = fopen("d:\\a01.txt", "w");
+
+		//int x = 2;
+
+		//switch (x)
+
+		//{
+		//case 1: {x = 10; fprintf(fp, "%d\n", x); break; }
+
+		//case 2: {x = x * x; fprintf(fp, "%d\n", x); }
+
+		//case 3: {x++; fprintf(fp, "%d\n", x); break; }
+
+		//case 4: {x--; fprintf(fp, "%d\n", x); }
+
+		//default: {fprintf(fp, "程序结束\n"); }
+
+//		
+#include <stdio.h>
+#pragma warning (disable:4996)
+#include <math.h>
+
+int main()
+{
+//	FILE* fp;
+//	fp = fopen("d:\\aa.txt", "w");
+//	int count = 0;
+//	for (int i = 100; i <= 200; i++)
+//	{
+//		if (i % 6 == 0)
+//		{
+//			fprintf(fp, "%d ", i);
+//			count++;
+//			if (count % 5 == 0)
+//			{
+//				fprintf(fp, "\n");
+//			}
+//		}
+//	}
+//	fclose(fp);
+	
+	/*int a = 13;
+	int b = 22;
+	printf("%d", a & b);*/
+	//00000000000000000000000000001101
+	//00000000000000000000000000010110
+	//00000000000000000000000000000100==4
+
+	/*int a = 96;
+	int n = a >> 3;
+	printf("%d", n);*/
+	//64+32
+	//00000000000000000000000001100000
+	//00000000000000000000000000001100=12
+
+	//11000
+
+
+
+	return 0;
+}
