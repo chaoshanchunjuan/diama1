@@ -1,0 +1,1009 @@
+//#include <stdio.h>
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (magazine[j] != 0)
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = 0;
+//                    ransomNote[i] = 0;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        if (ransomNote[i] != 0)
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+//int main()
+//{
+//	char arr1[10] = { "aa" };
+//	char arr2[10] = { "aab" };
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (arr2[j] != 0)
+//            {
+//                if (arr1[i] == arr2[j])
+//                {
+//                    arr2[j] = '0';
+//                    arr1[i] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; arr1[i] != '\0'; i++)
+//    {
+//        if (arr1[i] != '0')
+//        {
+//            printf("false\n");
+//        }
+//    }
+//	return 0;
+//}
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    if (strlen(ransomNote) > strlen(magazine))
+//        return false;
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        int j = 0;
+//        for (j = 0; magazine[j] != '\0'; j++)
+//        {
+//            if (magazine[j] != '0')
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//        if (magazine[j] == '\0')
+//            return false;
+//    }
+//    return true;
+//}
+//int main()
+//{
+//	int n = 2;
+//	int* answer = (int*)malloc(sizeof(int) * n);
+//	for (int i = 0; i < 100; i++)
+//	{
+//		printf("%d", answer[i]);
+//	}
+//	return 0;
+//
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;//容易丢了解引用（*）
+//}
+//
+//int main()
+//{
+//	struct Sub
+//	{
+//		char name;
+//		int age;
+//	};
+//    struct Sub s[3] = {{"apple",10},{"pear",15},{"banana",13}};
+//	int arr[10] = { 9,7,8,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_int);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_float(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+//
+//int main()
+//{
+//	float arr[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_float);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%f ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_char(const void* e1, const void* e2)
+//{
+//	return *(char*)e1 - *(char*)e2;
+//}
+//
+//int main()
+//{
+//	char s[5] = { 'e','d','c','b','a' };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_char);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c ",s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_double(const void* e1, const void* e2)
+//{
+//	return *(double*)e1 > *(double*)e2 ? 1 : -1;//double原始64位，int原始32位，用三目运算来介入，double自己比较然后出来整数返回
+//}
+//
+//int main()
+//{
+//	double s[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_double);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%lf ", s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//	
+//int main()
+//{
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#pragma warning (disable:4996)
+struct Sub
+{
+	char name;
+	int age;
+};
+
+int cmp_struct(const void* e1, const void* e2)
+{	
+	//return   (*(int*)e1)->age - (*(int*)e2)->age;
+	//return   (*(Sub*)e1.age) > (*(Sub*)e2.age)?1:-1;
+	return ((struct Sub*)e1)->name - ((struct Sub*)e2)->name;//用上面两个都不能过，上面那个一个过cpp却可以过不知道为啊哈，自己试了用全部的结构体就过了
+}
+
+
+
+int main()
+{
+	struct Sub s[3] = { {"banana",20},{"apple",10},{"pear",30} };
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), cmp_struct);
+	for (int i = 0; i < sz; i++)
+	{
+		printf("%s", s[i].name);
+	}
+
+	return 0;
+}//#include <stdio.h>
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (magazine[j] != 0)
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = 0;
+//                    ransomNote[i] = 0;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        if (ransomNote[i] != 0)
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+//int main()
+//{
+//	char arr1[10] = { "aa" };
+//	char arr2[10] = { "aab" };
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (arr2[j] != 0)
+//            {
+//                if (arr1[i] == arr2[j])
+//                {
+//                    arr2[j] = '0';
+//                    arr1[i] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; arr1[i] != '\0'; i++)
+//    {
+//        if (arr1[i] != '0')
+//        {
+//            printf("false\n");
+//        }
+//    }
+//	return 0;
+//}
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    if (strlen(ransomNote) > strlen(magazine))
+//        return false;
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        int j = 0;
+//        for (j = 0; magazine[j] != '\0'; j++)
+//        {
+//            if (magazine[j] != '0')
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//        if (magazine[j] == '\0')
+//            return false;
+//    }
+//    return true;
+//}
+//int main()
+//{
+//	int n = 2;
+//	int* answer = (int*)malloc(sizeof(int) * n);
+//	for (int i = 0; i < 100; i++)
+//	{
+//		printf("%d", answer[i]);
+//	}
+//	return 0;
+//
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;//容易丢了解引用（*）
+//}
+//
+//int main()
+//{
+//	struct Sub
+//	{
+//		char name;
+//		int age;
+//	};
+//    struct Sub s[3] = {{"apple",10},{"pear",15},{"banana",13}};
+//	int arr[10] = { 9,7,8,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_int);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_float(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+//
+//int main()
+//{
+//	float arr[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_float);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%f ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_char(const void* e1, const void* e2)
+//{
+//	return *(char*)e1 - *(char*)e2;
+//}
+//
+//int main()
+//{
+//	char s[5] = { 'e','d','c','b','a' };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_char);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c ",s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_double(const void* e1, const void* e2)
+//{
+//	return *(double*)e1 > *(double*)e2 ? 1 : -1;//double原始64位，int原始32位，用三目运算来介入，double自己比较然后出来整数返回
+//}
+//
+//int main()
+//{
+//	double s[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_double);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%lf ", s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//	
+//int main()
+//{
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#pragma warning (disable:4996)
+struct Sub
+{
+	char name;
+	int age;
+};
+
+int cmp_struct(const void* e1, const void* e2)
+{	
+	//return   (*(int*)e1)->age - (*(int*)e2)->age;
+	//return   (*(Sub*)e1.age) > (*(Sub*)e2.age)?1:-1;
+	return ((struct Sub*)e1)->name - ((struct Sub*)e2)->name;//用上面两个都不能过，上面那个一个过cpp却可以过不知道为啊哈，自己试了用全部的结构体就过了
+}
+
+
+
+int main()
+{
+	struct Sub s[3] = { {"banana",20},{"apple",10},{"pear",30} };
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), cmp_struct);
+	for (int i = 0; i < sz; i++)
+	{
+		printf("%s", s[i].name);
+	}
+
+	return 0;
+}//#include <stdio.h>
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (magazine[j] != 0)
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = 0;
+//                    ransomNote[i] = 0;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        if (ransomNote[i] != 0)
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+//int main()
+//{
+//	char arr1[10] = { "aa" };
+//	char arr2[10] = { "aab" };
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (arr2[j] != 0)
+//            {
+//                if (arr1[i] == arr2[j])
+//                {
+//                    arr2[j] = '0';
+//                    arr1[i] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; arr1[i] != '\0'; i++)
+//    {
+//        if (arr1[i] != '0')
+//        {
+//            printf("false\n");
+//        }
+//    }
+//	return 0;
+//}
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    if (strlen(ransomNote) > strlen(magazine))
+//        return false;
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        int j = 0;
+//        for (j = 0; magazine[j] != '\0'; j++)
+//        {
+//            if (magazine[j] != '0')
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//        if (magazine[j] == '\0')
+//            return false;
+//    }
+//    return true;
+//}
+//int main()
+//{
+//	int n = 2;
+//	int* answer = (int*)malloc(sizeof(int) * n);
+//	for (int i = 0; i < 100; i++)
+//	{
+//		printf("%d", answer[i]);
+//	}
+//	return 0;
+//
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;//容易丢了解引用（*）
+//}
+//
+//int main()
+//{
+//	struct Sub
+//	{
+//		char name;
+//		int age;
+//	};
+//    struct Sub s[3] = {{"apple",10},{"pear",15},{"banana",13}};
+//	int arr[10] = { 9,7,8,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_int);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_float(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+//
+//int main()
+//{
+//	float arr[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_float);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%f ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_char(const void* e1, const void* e2)
+//{
+//	return *(char*)e1 - *(char*)e2;
+//}
+//
+//int main()
+//{
+//	char s[5] = { 'e','d','c','b','a' };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_char);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c ",s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_double(const void* e1, const void* e2)
+//{
+//	return *(double*)e1 > *(double*)e2 ? 1 : -1;//double原始64位，int原始32位，用三目运算来介入，double自己比较然后出来整数返回
+//}
+//
+//int main()
+//{
+//	double s[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_double);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%lf ", s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//	
+//int main()
+//{
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#pragma warning (disable:4996)
+struct Sub
+{
+	char name;
+	int age;
+};
+
+int cmp_struct(const void* e1, const void* e2)
+{	
+	//return   (*(int*)e1)->age - (*(int*)e2)->age;
+	//return   (*(Sub*)e1.age) > (*(Sub*)e2.age)?1:-1;
+	return ((struct Sub*)e1)->name - ((struct Sub*)e2)->name;//用上面两个都不能过，上面那个一个过cpp却可以过不知道为啊哈，自己试了用全部的结构体就过了
+}
+
+
+
+int main()
+{
+	struct Sub s[3] = { {"banana",20},{"apple",10},{"pear",30} };
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), cmp_struct);
+	for (int i = 0; i < sz; i++)
+	{
+		printf("%s", s[i].name);
+	}
+
+	return 0;
+}//#include <stdio.h>
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (magazine[j] != 0)
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = 0;
+//                    ransomNote[i] = 0;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        if (ransomNote[i] != 0)
+//        {
+//            return false;
+//        }
+//    }
+//    return true;
+//}
+
+//int main()
+//{
+//	char arr1[10] = { "aa" };
+//	char arr2[10] = { "aab" };
+//    for (int i = 0; i != '\0'; i++)//ransomNote
+//    {
+//        for (int j = 0; j != '\0'; j++)//magazine
+//        {
+//            if (arr2[j] != 0)
+//            {
+//                if (arr1[i] == arr2[j])
+//                {
+//                    arr2[j] = '0';
+//                    arr1[i] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    for (int i = 0; arr1[i] != '\0'; i++)
+//    {
+//        if (arr1[i] != '0')
+//        {
+//            printf("false\n");
+//        }
+//    }
+//	return 0;
+//}
+
+//bool canConstruct(char* ransomNote, char* magazine)
+//{
+//    if (strlen(ransomNote) > strlen(magazine))
+//        return false;
+//    for (int i = 0; ransomNote[i] != '\0'; i++)
+//    {
+//        int j = 0;
+//        for (j = 0; magazine[j] != '\0'; j++)
+//        {
+//            if (magazine[j] != '0')
+//            {
+//                if (ransomNote[i] == magazine[j])
+//                {
+//                    magazine[j] = '0';
+//                    break;
+//                }
+//            }
+//        }
+//        if (magazine[j] == '\0')
+//            return false;
+//    }
+//    return true;
+//}
+//int main()
+//{
+//	int n = 2;
+//	int* answer = (int*)malloc(sizeof(int) * n);
+//	for (int i = 0; i < 100; i++)
+//	{
+//		printf("%d", answer[i]);
+//	}
+//	return 0;
+//
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_int(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;//容易丢了解引用（*）
+//}
+//
+//int main()
+//{
+//	struct Sub
+//	{
+//		char name;
+//		int age;
+//	};
+//    struct Sub s[3] = {{"apple",10},{"pear",15},{"banana",13}};
+//	int arr[10] = { 9,7,8,6,5,4,3,2,1,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_int);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_float(const void* e1, const void* e2)
+//{
+//	return *(int*)e1 - *(int*)e2;
+//}
+//
+//int main()
+//{
+//	float arr[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	qsort(arr, sz, sizeof(arr[0]), cmp_float);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%f ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_char(const void* e1, const void* e2)
+//{
+//	return *(char*)e1 - *(char*)e2;
+//}
+//
+//int main()
+//{
+//	char s[5] = { 'e','d','c','b','a' };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_char);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%c ",s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//
+//int cmp_double(const void* e1, const void* e2)
+//{
+//	return *(double*)e1 > *(double*)e2 ? 1 : -1;//double原始64位，int原始32位，用三目运算来介入，double自己比较然后出来整数返回
+//}
+//
+//int main()
+//{
+//	double s[5] = { 9.0,8.0,7.0,6.0,5.0 };
+//	int sz = sizeof(s) / sizeof(s[0]);
+//	qsort(s, sz, sizeof(s[0]), cmp_double);
+//	for (int i = 0; i < sz; i++)
+//	{
+//		printf("%lf ", s[i]);
+//	}
+//	return 0;
+//}
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#pragma warning (disable:4996)
+//	
+//int main()
+//{
+//
+//
+//	return 0;
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#pragma warning (disable:4996)
+struct Sub
+{
+	char name;
+	int age;
+};
+
+int cmp_struct(const void* e1, const void* e2)
+{	
+	//return   (*(int*)e1)->age - (*(int*)e2)->age;
+	//return   (*(Sub*)e1.age) > (*(Sub*)e2.age)?1:-1;
+	return ((struct Sub*)e1)->name - ((struct Sub*)e2)->name;//用上面两个都不能过，上面那个一个过cpp却可以过不知道为啊哈，自己试了用全部的结构体就过了
+}
+
+
+
+int main()
+{
+	struct Sub s[3] = { {"banana",20},{"apple",10},{"pear",30} };
+	int sz = sizeof(s) / sizeof(s[0]);
+	qsort(s, sz, sizeof(s[0]), cmp_struct);
+	for (int i = 0; i < sz; i++)
+	{
+		printf("%s", s[i].name);
+	}
+
+	return 0;
+}
